@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f00"
+    tools:context=".RedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="移動消費製造商機"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/pw"
+                android:layout_marginBottom="5dp"
+                android:background="#0066FF"
+                android:drawableTop="@drawable/ic_launcher_background"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="最新訊息"
+                android:textColor="#FCFCFC"></TextView>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/pw"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFBB00"
+                android:drawableTop="@drawable/ic_launcher_background"
+                android:gravity="center"
+                android:padding="30dp"
+                android:text="最新訊息"
+                android:textColor="#FCFCFC"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/pw"
+                    android:layout_marginBottom="5dp"
+                    android:background="	#008888"
+                    android:drawableLeft="@drawable/a11"
+                    android:gravity="center"
+                    android:padding="30dp"
+                    android:text="最新訊息"
+                    android:textColor="#FCFCFC"></TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/pw"
+                    android:layout_marginBottom="5dp"
+                    android:background="#0000CC"
+                    android:drawableTop="@drawable/a11"
+                    android:gravity="center"
+                    android:padding="30dp"
+                    android:text="最新訊息"
+                    android:textColor="#FCFCFC"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/pw"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="	#FF0088"
+                    android:drawableTop="@drawable/a11"
+                    android:gravity="center"
+                    android:padding="30dp"
+                    android:text="最新訊息"
+                    android:textColor="#FCFCFC"></TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/pw"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#8E8E8E"
+                    android:drawableLeft="@drawable/a11"
+                    android:gravity="center"
+                    android:padding="30dp"
+                    android:text="最新訊息"
+                    android:textColor="#FCFCFC"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/a1"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/pw"
+                android:background="#00AA00"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申請加入"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直營店"
+                    android:textSize="20sp"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/a2"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/pw"
+                android:layout_marginLeft="20dp"
+                android:background="#CC0000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申請加入"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直營店"
+                    android:textSize="20sp"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">tv2</string>
+
+        <string-array name="lunch">
+            <item>雞腿飯</item>
+            <item>魯肉飯</item>
+            <item>排骨飯</item>
+            <item>水餃</item>
+            <item>陽春麵</item>
+        </string-array>
+
+</resources>

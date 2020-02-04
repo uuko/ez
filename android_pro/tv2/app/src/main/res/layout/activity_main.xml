@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/a2">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        android:layout_below="@+id/toolbar">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="點數餘額:600"
+                    android:textColor="#ff00ff"></TextView>
+
+                <Spinner
+                    android:id="@+id/sprinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"></Spinner>
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow android:padding="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="店家名稱"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="交易日期"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="交易時間"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="紅利點數"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="草本屋"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YY/MM/DD"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="20:30"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+1000"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow android:background="#ffff" android:padding="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="草本屋"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YY/MM/DD"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="20:30"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+1000"
+                        android:gravity="center"/>
+                </TableRow>    <TableRow android:background="#DAE8FC" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="草本屋"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="YY/MM/DD"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20:30"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+1000"
+                    android:gravity="center"/>
+
+            </TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow><TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow><TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#ffff" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+                <TableRow android:background="#DAE8FC" android:padding="15dp" android:layout_width="wrap_content" ></TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        >
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_launcher_background"
+       android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

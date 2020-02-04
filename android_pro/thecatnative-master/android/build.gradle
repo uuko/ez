@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    ext {
+        buildToolsVersion = "28.0.3"
+        minSdkVersion = 16
+        compileSdkVersion = 27
+        targetSdkVersion = 27
+        supportLibVersion = "27.1.1"
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+def dependencyMap = [
+        "com.android.support" : rootProject.ext.supportLibVersion
+]
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootDir/../node_modules/react-native/android"
+        }
+    }
+
+      configurations.all {
+            resolutionStrategy {
+
+                eachDependency { DependencyResolveDetails details ->
+
+                    def group = details.requested.group
+                    def name = details.requested.name
+
+                    if (dependencyMap.containsKey(group)) {
+                        details.useVersion dependencyMap[group]
+                    }
+                }
+            }
+        }
+
+}

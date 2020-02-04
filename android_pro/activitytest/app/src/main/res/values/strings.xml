@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">activitytest</string>
+    <string name="button_1">button_1</string>
+    <string name="button_2">button_2</string>
+    <string name="button_3">button_3</string>
+    <string name="this_is_view">this_is_view</string>
+</resources>

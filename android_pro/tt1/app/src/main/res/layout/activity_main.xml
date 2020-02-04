@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:background="#8E8E8E"
+                android:gravity="center"
+                android:text="國籍"
+                android:textColor="#FCFCFC" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/country"
+
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#8E8E8E"
+                android:gravity="center"
+                android:text="會員帳號"
+                android:textColor="#FCFCFC" />
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/account"
+                android:hint="請輸入手機號碼"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_toRightOf="@+id/account"
+                android:hint="請輸入電子信箱"
+                android:inputType="textEmailAddress" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pw"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/text2"
+                android:layout_marginBottom="5dp"
+                android:background="#8E8E8E"
+                android:gravity="center"
+                android:text="會員密碼"
+                android:textColor="#FCFCFC" />
+
+            <EditText
+                android:id="@+id/pw_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/account"
+                android:hint="密碼長度至少大於六個字元"
+
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pw"
+                android:layout_marginBottom="5dp"
+                android:background="#8E8E8E"
+                android:gravity="center"
+                android:text="出生日期"
+                android:textColor="#FCFCFC" />
+
+            <EditText
+                android:id="@+id/day_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pw_t"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/account"
+                android:hint="YY/MM/DD"
+                android:inputType="date" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+
+        >
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/button"
+            android:text="清除重填"
+            android:textColor="#8E8E8E" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:background="@drawable/button"
+            android:text="確認送出"
+            android:textColor="#8E8E8E" />
+    </LinearLayout>
+</LinearLayout>
+

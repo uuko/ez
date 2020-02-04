@@ -1,0 +1,66 @@
+{
+  "name": "thecatnative",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "icon-android": "app-icon generate  --platforms=android",
+    "icon-ios": "app-icon generate  --platforms=ios",
+    "prettier": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
+    "flow-check": "flow check --show-all-errors",
+    "flow-coverage": "flow coverage",
+    "eslint": "eslint src"
+  },
+  "dependencies": {
+    "appcenter": "1.12.0",
+    "appcenter-analytics": "1.12.0",
+    "appcenter-crashes": "1.12.0",
+    "axios": "^0.18.0",
+    "immutable": "^3.8.2",
+    "prettier": "^1.11.1",
+    "react": "16.6.3",
+    "react-native": "^0.58.4",
+    "react-native-image-progress": "1.1.1",
+    "react-native-multiple-select": "^0.4.4",
+    "react-native-popup-dialog": "^0.17.0",
+    "react-native-vector-icons": "^6.3.0",
+    "react-navigation": "^1.5.8",
+    "react-navigation-redux-helpers": "^1.0.3",
+    "react-redux": "^5.0.7",
+    "recompose": "^0.26.0",
+    "recyclerlistview": "^2.0.0-beta.3",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-observable": "^0.18.0",
+    "rxjs": "^5.5.7",
+    "url-parse": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "7.0.0",
+    "app-icon": "^0.8.1",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.65.0",
+    "jest": "23.6.0",
+    "react-test-renderer": "^16.6.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.0.1",
+    "metro-react-native-babel-preset": "^0.50.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
+  }
+}

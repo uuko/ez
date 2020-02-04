@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">un1act</string>
+    <string name="text_header">text_header</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a</string>
+
+</resources>
